@@ -1,0 +1,858 @@
+body {      
+      background-image: url(/Images/Untitled\ design.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; 
+      background-repeat: no-repeat;
+      
+      
+    
+    }
+
+    h1 {
+      font-family: "Righteous", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      
+    }
+    
+    
+    .bcimage {
+      width: 100%; /* Make image responsive */
+      height: auto;
+
+      
+    }
+    
+    
+      
+    
+
+/*  NAVIGATION BAR STYLES */
+    .Navbar {
+       
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      margin: 0 auto;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: calc(100%);
+      max-width: 1440px;
+      box-sizing: border-box;
+
+
+    }
+
+   .Navbar ul {
+      list-style-type: disc;
+      display: flex;
+      margin: 0%;
+      padding: 0%;
+      padding-left: 30px;
+      
+    }
+    .Navbar li {
+      margin-right: 0px; /* Space between links */
+  }
+
+
+  
+  
+
+    .Navbar ul li a {
+      text-decoration: none; /* Remove underline */
+      color: #000; /* Text color */
+      padding: 8px 15px; /* Padding around the text */
+      border: 2px solid transparent; /* Initial border (invisible) */
+      transition: border 0.3s ease; /* Smooth transition for the border */
+      transition: border 0.3s ease;
+    }
+
+    .Navbar ul li a:hover {
+      border-color:aqua;
+      color:black;
+    }
+    .logo {
+      margin-right: 20px;
+      
+    }
+
+    .header {
+      position: fixed;
+      font-family: "Righteous", sans-serif;
+      list-style-type: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      max-width: 1440px;
+      overflow: hidden;
+      background: #a4ccd0;
+      z-index: 100;
+      align-items: center;
+      justify-content: space-between;
+      position: -webkit-sticky; 
+      position: sticky;
+      top: 0;
+      padding: 20px;
+      }
+      
+      .Navbar li {
+       
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        float: left;
+        border-right:1px solid #bbb;
+      }
+      
+      .Navbar:last-child {
+        border-right: none;
+      }
+      
+      .Navbar li a {
+        
+        display: block;
+        color: rgb(3, 3, 3);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .Navbar a:hover:not(.active) {
+        border-radius: 10px;
+        background-color: #a4ccd0;
+      }
+      
+      .Navbar .active {
+        border-radius: 10px;
+        background-color: #a4ccd0;
+
+      }
+      
+/* Search Box */
+
+
+.search-box:hover {
+  box-shadow: none;
+}
+
+.search-box input[type="search"] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.search-box button[type="submit"] {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  background-color: #3fa8c2;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.search-box input[type="search"]:focus {
+  outline: none;
+}
+
+
+   /* END OF NAVIGATION BAR STYLES*/
+
+   .white-box p {
+    text-align:center;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  
+
+
+
+
+    .white-box {
+      position: absolute; 
+      top: 75%; /* Adjust the top position */
+      left: 50%; /* Adjust the left position */
+      transform: translate(-50%, -50%); /* Center the box */
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      text-align: center;
+    }
+
+
+    
+      .Center {
+        justify-content: center;
+        display: flex;
+      }
+
+
+      .image {
+        
+        display: absolute;
+        position: center;
+        margin-top: 10px; 
+        margin-right: 20px;
+        
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+      }
+
+     /* FLEX CONTAINER SECTION */ 
+
+     .flex-container1, .flex-container2 {
+      background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+      flex-grow: 1; /* make the container take up more space */
+      height: 500px; 
+      flex-basis: 80%;
+    }
+    
+      .flex-container1 {
+        display: flex;
+        position: relative;        
+        justify-content:space-between;  
+      }
+
+      .flex-container1 > div {        
+        flex-basis: 50%;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        justify-content: space-between;
+        border-radius: 20px;        
+        flex-grow: 1;
+      }
+
+      .flex-container2 {
+        display: flex;
+        position: relative;       
+        justify-content: flex-start; /* align items within a container */        
+      }
+
+
+      .flex-container2 > div {        
+        flex-basis: 50%;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        justify-content: space-between;
+        border-radius: 20px;   
+        flex-grow: 1;
+      }
+    
+      /* flex Images */
+      .ms1 {
+        justify-content: flex-end;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* text */
+      h4 {
+        font-family: "Righteous", sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+      }
+
+      .mission1 {
+       margin: 20px;
+       margin-bottom: 40px;
+       font-family: "Josefin Sans", sans-serif;
+       font-size: 20px;
+       text-align: justify;
+       margin-top: 120px;
+      }
+      /* */
+
+      .mission2 {
+        margin: 20px;
+        margin-bottom: 40px;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        margin-top: 120px;
+
+      }
+
+      .text-overlay {
+        font-family: "Righteous", sans-serif;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(19, 39, 53);
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Righteous", sans-serif;
+        font-weight: lighter;
+      }
+
+      .service-list ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+    
+
+      .service-list ol li {
+        flex-basis: 45%; /* adjust the width of each li element */
+        margin: 20px 20px;
+        margin-bottom: 5px;
+        font-family: "Josefin Sans", sans-serif;;
+
+      }
+      .service-list ol li ul {
+        margin-bottom: 40px;
+      }
+
+      
+
+/* NEWS & UPDATES */
+    .cntr {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+  
+      .updt {
+        display: flex;
+        justify-content: space-between;
+        background-color: #777; /* Matches the gray content background */
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* shadow */
+        height: 200px;
+    }
+  
+      .txt-1 {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: #fff; 
+        font-family: "Josefin Sans", sans-serif;
+        text-align: left;
+        margin-left: -25px;
+        
+    }
+
+      .txt-1 li {
+        margin-bottom: 10px;
+      }
+
+    .txt-1 span {
+      font-family: "Righteous", sans-serif;
+      font-weight: 100;
+      text-decoration: underline;
+      font-size: 20px;
+    }
+  
+    
+
+   /* EMAIL FORM */
+
+   .form-section {
+    background-image: url(/Images/340B_Video_patient.gif);
+    background-position: left; /* Move the image to the left side */
+    background-size: 400px 247px; /* Make the image smaller (200px wide) */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-color: #a6d1d1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h3 {
+    margin-top: 0;
+  }
+  
+  .form-section p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-section input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  
+  .form-section button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-section button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+    
+    
+  
+    /* ABOUT US PAGE */
+
+    .history-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .history {
+      margin: 20px;
+      
+    }
+
+    .history p {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+
+    .about-bcimage {
+      width: 1100px; /* make the image full-width */
+      height: 600px; /* adjust the height to your liking */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px; /* add some rounded corners */
+      margin-top: 20px;
+      margin-bottom: 20px; /* add some space between the image and the "Our Branches" text */
+      margin-left: 200px;
+    }
+
+
+
+    /* OUR BRANCHES */
+    .flex-container {
+      display: flex;
+      flex-direction: column; /* change from row to column */
+      align-items: center;
+      margin-bottom: 20px; /* add some margin between containers */
+    }
+    
+  
+    .flex-box {
+      display: flex;
+      flex-direction: row; /* Change from column to row */
+      flex-wrap: wrap;
+      align-items: center;
+      width: 97%;
+      height: 600px;
+      margin: 10px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .branch-img {
+      width: 500px; /* adjust the width to your liking */
+      height: 300px; /* adjust the height to your liking */
+      margin-right: 20px; /* add some space between the image and the text */
+      border-radius: 20px;
+    }
+    
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* change from flex-start to center */
+      padding-top: 0; /* remove this line or adjust the value */
+      padding-right: 20px;
+      text-align: left;
+    }
+    
+    .map-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; /* add this to move the text to the right */
+    }
+
+    
+    .flex-banner {
+      width: 100%;
+      height: 250px; /* adjust the height to your desired banner height */
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0; /* remove all margins */
+      object-position: top 70%;
+      margin-top: -30px;
+    }
+
+    .flex-box .content {
+      margin-left: 20px;
+      order: 2; /* remove this line */
+      text-align: left;
+      margin-top: 0; /* remove this line */
+      margin-right: 0; /* remove this line */
+    }
+
+    .flex-box h5 {
+      margin-bottom: 10px;
+    }
+
+    .flex-box p {
+      margin-top: 10px;
+      text-align: left;
+      font-family: "Josefin Sans", sans-serif;
+    }
+  
+    h5 {
+      font-family:"Righteous", sans-serif ;
+      font-size: 24px;
+      font-weight: lighter;
+      text-align: right;
+    }
+
+    .map-text ul {
+      font-family:"Josefin Sans", sans-serif ;
+    }
+    /*END OF BRANCHES */
+
+    table, th, td {
+      table-layout: fixed;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      padding-bottom: 100px;
+      
+}
+      th, td {
+      border: 1px solid #ddd; /* Add border to individual cells */
+      padding: 10px;
+      text-align: center;
+}
+
+      th {
+        background-color: #f0f0f0;
+        font-family: "Josefin Sans", sans-serif;
+}
+
+      td {
+        background-color: #fff;
+        font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+/* SERVICES PAGE */
+
+.grid-container {
+  background-color: #fffefe;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Grid Item */
+.grid-item {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.grid-item h4 {
+  font-family: "Righteous", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.grid-item p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emergency-care h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+
+/*DOCTORS PAGE */
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Auto adjust num of columns from available space. */
+  gap: 20px;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+.doctor-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.doctor-card img {
+  object-fit: cover;
+  width: 220px;
+  height: 200px;
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+
+.doctor-card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.doctor-card p {
+  margin: 5px 0;
+  color: #555;
+}
+.doctor-card p:first-of-type {
+  margin-bottom: 20px;
+}
+
+h6 {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 28px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+/* CONSULTING */
+
+.reservation-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #299a92;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+button:hover {
+  background-color: #299a92;
+}
+
+
+
+
+/* PHARMACY */
+
+.pharmacy-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"], select, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #299a92;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+
+}
+
+button:hover {
+  background-color: #299a92;
+}
+
+
+/* FOOTER  */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-link {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.footer-copyright {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+
+
+    
+    
+
+      

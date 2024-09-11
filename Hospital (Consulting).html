@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astro | Consulting </title>
+
+        <!--NAV BAR-->    
+        <link rel = "stylesheet" href = "Style/Styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap" rel="stylesheet">
+        </head>
+        <body>
+        <!--NAV BAR-->    
+            <header class = "header">
+                <nav class = "Navbar">
+                  <img src = "Images/logo image.png" alt = "logo"  width="90" height="60" class="logo">
+                  <div class = "search-box">
+                    <input type="search" placeholder="Type...">
+                    <button type="submit">Search</button>
+                  </div>
+                    <ul> 
+
+                        <li><a href="Hospital (Home).html">Home</a></li>
+                        <li><a href="Hospital (About).html">About us and contact</a></li>
+                        <li><a href="Hospital (Services).html">Services</a></li>
+                        <li><a href="Hospital (Doctors).html">Doctors</a></li>
+                        <li><a class="active" href="Hospital (Consulting).html">Consulting</a></li>
+                        <li><a href="Hospital (Pharmacy).html">Pharmacy</a></li> 
+            
+                    </ul>
+                </nav>
+            </header>
+                
+            <!--END OF NAV BAR-->
+            
+
+            <section class="reservation-form">
+              <h2>Reserve a Doctor for Consultation</h2>
+              <form action="/submit-consultation" method="post">
+                  <label for="full-name">Full Name:</label>
+                  <input type="text" id="full-name" name="full_name" required>
+  
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+  
+                  <label for="doctor">Select Doctor:</label>
+                  <select id="doctor" name="doctor" required>
+                      <option value="">--Select a Doctor--</option>
+                      <option value=""></option>
+                      <option value="=centra">---------Central Doctors---------</option>                      
+                      <option value="dr_john_doe">Dr. John Doe - Emergency Medicine</option>
+                      <option value="dr_jane_smith">Dr. Jane Smith - Urgent Care</option>
+                      <option value="Dr. Mark Lee">Dr. Mark Lee - Trauma Surgeon</option>
+                      <option value="Dr. Emily Johnson">Dr. Emily Johnson - Triage Specialist</option>
+                      <option value="Dr. William Brown">Dr. William Brown - Radiologist (CT Scan)</option>
+                      <option value="Dr. Sophia White">Dr. Sophia White - Ultrasound Specialist</option>
+                      <option value="Dr. Michael Green">Dr. Michael Green - Radiologist (X-Ray Department)</option>
+                      <option value="Dr. Sarah Black">Dr. Sarah Black - Emergency Room Physician</option>
+                      <option value="Dr. Robert King">Dr. Robert King - General Practitioner</option>
+                      <option value=""></option>
+                      <option value="West-point">---------West-Point Doctors---------</option>
+                      <option value="Dr. Alice Carter">Dr. Alice Carter - Intensive Care Unit Specialist</option>
+                      <option value="Dr. Mia Thompson">Dr. Mia Thompson - Maternity Ward Obstetrician</option>
+                      <option value="Dr. James Anderson">Dr. James Anderson - Oncology Specialist</option>
+                      <option value="Dr. Olivia Martinez">Dr. Olivia Martinez - Rehabilitation Unit Physician</option>
+                      <option value="Dr. David Evans">Dr. David Evans - Surgical Department Surgeon</option>
+                      <option value="Dr. Ethan Brown">Dr. Ethan Brown - ICU Intensivist</option>
+                      <option value="Dr. Sophia Green">Dr. Sophia Green - General Surgeon</option>
+                      <option value="Dr. Liam Harris">Dr. Liam Harris - Maternity Specialist</option>
+                      <option value="Dr. Isabella Lee">Dr. Isabella Lee - Oncology Care Provider</option>                     
+                      <option value=""></option>
+                      <option value="southeast">---------South-East Pavillion Doctors---------</option>
+                      <option value="Dr. Laura Mitchell">Dr. Laura Mitchell - General Clinic Physician</option>
+                      <option value="Dr. Robert Taylo">Dr. Robert Taylo - Dialysis Specialist</option>
+                      <option value="Dr. Emily Clark">Dr. Emily Clark - Physiotherapy Specialist</option>
+                      <option value="Dr. Daniel Scott">Dr. Daniel Scott - Radiology Specialist</option>
+                      <option value="Dr. Ava Robinson">Dr. Ava Robinson -Specialized Treatments Expert</option>
+                      <option value="Dr. Michael Wilson">Dr. Michael Wilson - General Clinic Doctor</option>
+                      <option value="Dr. Natalie Adams">Dr. Natalie Adams - Dialysis Care Provider</option>
+                      <option value="Dr. James White">Dr. James White - Physiotherapist</option>
+                      <option value="Dr. Isabella Turner">Dr. Isabella Turner - Radiology Expert</option>
+
+                    
+                  </select>
+  
+                  <label for="department">Department:</label>
+                  <select id="department" name="department" required>
+                      <option value="">--Select a Department--</option>
+                      <option value=""></option>
+                      <option value="southeast">---------Emergency Care---------</option>
+                      <option value="emergency_room">Emergency Room</option>
+                      <option value="Trauma Unit">Trauma Unit</option>
+                      <option value="Triage Station">Triage Station</option>
+                      <option value="Ambulance Service">Ambulance Service</option>
+                      <option value="Urgent Care">Urgent Care Centre</option>
+                      <option value=""></option>
+                      <option value="southeast">---------Impatient Services---------</option>
+                      <option value="Intensive Care Unit">Intensive Care Unit</option>
+                      <option value="Surgical Department">Surgical Department</option>
+                      <option value="Maternity Ward">Maternity Ward</option>
+                      <option value="Oncology Ward">Oncology Ward</option>
+                      <option value="Rehabilitation Unit">Rehabilitation Unit</option>
+                      <option value=""></option>
+                      <option value="southeast">---------Outpatient Services---------</option>
+                      <option value="Clinic">Clinic</option>
+                      <option value="Dialysis Center">Dialysis Center</option>
+                      <option value="Physiotherapy">Physiotherapy</option>
+                      <option value="Oncology Outpatient">Oncology Outpatient</option>
+                      <option value="Radiology Department">Radiology Department</option>
+                      <option value=""></option>
+                      <option value="southeast">---------Diagnostic---------</option>
+                      <option value="Laboratory Services">Laboratory Services</option>
+                      <option value="MRI Department">MRI Department</option>
+                      <option value="CT Scan Unit">CT Scan Unit</option>
+                      <option value="X-Ray Department">X-Ray Department</option>
+                      <option value="Pathology Lab">Pathology Lab</option>
+                  </select>
+  
+                  <label for="preferred-date">Preferred Date:</label>
+                  <input type="date" id="preferred-date" name="preferred_date" required>
+  
+                  <label for="preferred-time">Preferred Time:</label>
+                  <input type="time" id="preferred-time" name="preferred_time" required>
+  
+                  <label for="comments">Additional Comments:</label>
+                  <textarea id="comments" name="comments" rows="4" placeholder="Any additional information or special requests"></textarea>
+  
+                  <button type="submit">Submit Reservation</button>
+              </form>
+          </section>
+                          
+                          
+        
+        
+        
+        
+        <!--FOOTER-->   
+     <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>            
+            </div>
+          </div>
+          
+        <div class="footer-copyright">
+          <p>&copy; 2024 ASTRO Hospitals (PVT) ltd.  All rights reserved.</p>
+        </div>
+      </footer> 
+        
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astro | Pharmacy </title>
+
+        <!--NAV BAR-->    
+        <link rel = "stylesheet" href = "Style/Styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap" rel="stylesheet">
+
+        <!--NAV BAR-->    
+        <header class = "header">
+            <nav class = "Navbar">
+              <img src = "Images/logo image.png" alt = "logo"  width="90" height="60" class="logo">
+              <div class = "search-box">
+                <input type="search" placeholder="Type...">
+                <button type="submit">Search</button>
+              </div>
+                <ul> 
+
+                    <li><a href="Hospital (Home).html">Home</a></li>
+                    <li><a href="Hospital (About).html">About us and contact</a></li>
+                    <li><a href="Hospital (Services).html">Services</a></li>
+                    <li><a href="Hospital (Doctors).html">Doctors</a></li>
+                    <li><a href="Hospital (Consulting).html">Consulting</a></li>
+                    <li><a class="active" href="Hospital (Pharmacy).html">Pharmacy</a></li> 
+        
+                </ul>
+            </nav>
+        </header>
+
+            <!--END OF NAV BAR-->
+         
+            <section class="pharmacy-form">
+              <h2>Purchase Medicine</h2>
+              <form action="/submit-pharmacy-order" method="post">
+                  <label for="full-name">Full Name:</label>
+                  <input type="text" id="full-name" name="full_name" required>
+  
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+  
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="medicine">Select Medicine:</label>
+                  <select id="medicine" name="medicine" required>
+                      <option value="">--Select Medicine--</option>
+                      <option value="medicine1">Over-the-Counter (OTC)</option>
+                      <option value="medicine2">Antibiotics</option>
+                      <option value="medicine3">Vitamins and Supplements</option>
+                      <option value="medicine4">Asthma inhalers</option>
+                      <option value="medicine5">Antifungal cream</option>
+                      <option value="medicine6">Acne treatments</option>
+                      <option value="medicine7">Probiotics</option>
+                      <option value="medicine8">Pediatric pain relievers</option>
+                      <option value="medicine9">Birth control pills</option>
+                      <option value="medicine10">Nasal sprays</option>
+                      <option value="medicine11">Bandages</option>
+                      <option value="medicine12">Burn creams</option>
+                      <option value="medicine13">Eye drops</option>
+                      <option value="medicine14">Sleep aids</option>
+                      <option value="medicine15">Cholesterol-lowering drugs</option>
+                      <option value="medicine16">Cough syrups</option>
+
+                  </select>
+  
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantity" name="quantity" min="1" required>
+  
+                  <label for="delivery">Delivery Option:</label>
+                  <select id="delivery" name="delivery" required>
+                      <option value="">--Select Delivery Option--</option>
+                      <option value="pick_up">Pick Up at Pharmacy</option>
+                      <option value="home_delivery">Home Delivery</option>
+                  </select>
+  
+                  <label for="comments">Additional Comments:</label>
+                  <textarea id="comments" name="comments" rows="4" placeholder="Any additional instructions or information"></textarea>
+  
+                  <button type="submit">Place Order</button>
+              </form>
+          </section>
+                          
+        
+        
+        
+        <!--FOOTER-->   
+     <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>            
+            </div>
+          </div>
+          
+        <div class="footer-copyright">
+          <p>&copy; 2024 ASTRO Hospitals (PVT) ltd.  All rights reserved.</p>
+        </div>
+      </footer> 
+        
+    </body>
+</html>
