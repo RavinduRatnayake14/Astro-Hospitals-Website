@@ -4,30 +4,14 @@ body {
       background-position: center;
       background-attachment: fixed; 
       background-repeat: no-repeat;
+      overflow-x: hidden;
       
       
     
     }
+    
 
-    h1 {
-      font-family: "Righteous", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      text-align: center;
-      
-    }
-    
-    
-    .bcimage {
-      width: 100%; /* Make image responsive */
-      height: auto;
-
-      
-    }
-    
-    
-      
-    
+     
 
 /*  NAVIGATION BAR STYLES */
     .Navbar {
@@ -57,10 +41,6 @@ body {
     .Navbar li {
       margin-right: 0px; /* Space between links */
   }
-
-
-  
-  
 
     .Navbar ul li a {
       text-decoration: none; /* Remove underline */
@@ -135,7 +115,6 @@ body {
       
 /* Search Box */
 
-
 .search-box:hover {
   box-shadow: none;
 }
@@ -167,7 +146,43 @@ body {
 }
 
 
+@media screen and (max-width: 430px){
+
+  
+}
+  
+
+
    /* END OF NAVIGATION BAR STYLES*/
+
+
+
+
+
+
+
+/* HOME PAGE */
+
+h1 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  
+}
+
+
+.bcimage {
+  width: 100%; /* Make image responsive */
+  height: auto;
+
+  
+} 
+
+  .background {
+    position: relative;
+  }
+
 
    .white-box p {
     text-align:center;
@@ -175,14 +190,9 @@ body {
     font-family: "Josefin Sans", sans-serif;
   }
 
-  
-
-
-
-
     .white-box {
       position: absolute; 
-      top: 75%; /* Adjust the top position */
+      top: 50%; /* Adjust the top position */
       left: 50%; /* Adjust the left position */
       transform: translate(-50%, -50%); /* Center the box */
       background-color: #fff;
@@ -190,15 +200,11 @@ body {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 80%;
       text-align: center;
-    }
-
-
-    
+    }   
       .Center {
         justify-content: center;
         display: flex;
       }
-
 
       .image {
         
@@ -215,6 +221,7 @@ body {
         font-family: "Righteous", sans-serif;
         font-weight: 400;
       }
+
 
      /* FLEX CONTAINER SECTION */ 
 
@@ -336,8 +343,6 @@ body {
         margin-bottom: 40px;
       }
 
-      
-
 /* NEWS & UPDATES */
     .cntr {
       display: grid;
@@ -378,8 +383,6 @@ body {
       font-size: 20px;
     }
   
-    
-
    /* EMAIL FORM */
 
    .form-section {
@@ -433,7 +436,14 @@ body {
   .form-section button[type="submit"]:hover {
     background-color: #3e8e41;
   }
-    
+   /* END OF HOME PAGE */
+  
+
+
+
+
+
+
     
   
     /* ABOUT US PAGE */
@@ -470,7 +480,7 @@ body {
 
 
 
-    /* OUR BRANCHES */
+    
     .flex-container {
       display: flex;
       flex-direction: column; /* change from row to column */
@@ -557,7 +567,7 @@ body {
     .map-text ul {
       font-family:"Josefin Sans", sans-serif ;
     }
-    /*END OF BRANCHES */
+    
 
     table, th, td {
       table-layout: fixed;
@@ -583,6 +593,10 @@ body {
         background-color: #fff;
         font-family: "Josefin Sans", sans-serif;
 }
+/* END OF ABOUT US */
+
+
+
 
 
 
@@ -635,6 +649,33 @@ body {
   font-weight: 400;
 }
 
+.register-link {
+  font-family: "Josefin Sans", sans-serif;
+  display: block; 
+  padding: 30px 40px;
+  background-color: #23abb5; /* Primary button color */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+  width: 250px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.register-link:hover {
+  background-color: #1b7474; /* Darker shade on hover */
+}
+/* END OF SERVICES PAGE */
+
+
+
+
+
 
 /*DOCTORS PAGE */
 
@@ -683,6 +724,10 @@ h6 {
   font-size: 28px;
   font-family: "Josefin Sans", sans-serif;
 }
+/* END OF DOCTORS PAGE */
+
+
+
 
 
 
@@ -733,6 +778,10 @@ button {
 button:hover {
   background-color: #299a92;
 }
+
+/* END OF CONSULTING PAGE */
+
+
 
 
 
@@ -786,6 +835,65 @@ button {
 button:hover {
   background-color: #299a92;
 }
+/* END OF PHARMACY PAGE */
+
+
+
+
+
+
+/* PATIENT REGISTRATION FORM */
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  font-size: 23px;
+  display: block;
+  background-color: #299a92;
+  color: #fff;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 175px;
+  margin: 20px auto;
+}
+
+.form-group button:hover {
+  background-color: #156a64;
+}
+/* END OF PATIENT REGISTRATION FORM */
+
+
 
 
 /* FOOTER  */
@@ -849,7 +957,7 @@ button:hover {
 .footer-copyright p {
   margin: 0;
 }
-
+/* END OF FOOTER */
 
 
     

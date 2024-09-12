@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Patient Registration Form </title>
+
+        <link rel = "stylesheet" href = "Style/Styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap" rel="stylesheet">
+      
+        <!--Manifest JSON ICONS-->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      
+      <!--MOBILE-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      </head>
+        <body>
+        <!--NAV BAR-->    
+            <header class = "header">
+                <nav class = "Navbar">
+                  <img src = "Images/logo image.png" alt = "logo"  width="90" height="60" class="logo">
+                  <div class = "search-box">
+                    <input type="search" placeholder="Type...">
+                    <button type="submit">Search</button>
+                  </div>
+                    <ul> 
+
+                        <li><a href="Hospital (Home).html">Home</a></li>
+                        <li><a class="active" href="Hospital (About).html">About us and contact</a></li>
+                        <li><a href="Hospital (Services).html">Services</a></li>
+                        <li><a href="Hospital (Doctors).html">Doctors</a></li>
+                        <li><a href="Hospital (Consulting).html">Consulting</a></li>
+                        <li><a href="Hospital (Pharmacy).html">Pharmacy</a></li> 
+            
+                    </ul>
+                </nav>
+                <!--END OF NAV BAR-->
+        </header>
+
+        <body>
+            <div class="form-container">
+                <h2>Patient Registration Form</h2>
+                <form action="/submit-patient-registration" method="POST">
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="date_of_birth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-number">Contact Number:</label>
+                        <input type="tel" id="contact-number" name="contact_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="insurance">Insurance Provider:</label>
+                        <input type="text" id="insurance" name="insurance_provider">
+                    </div>
+                    <div class="form-group">
+                        <label for="medical-history">Medical History:</label>
+                        <textarea id="medical-history" name="medical_history" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+
+            
+        </body>
+
+
+
+        <!--FOOTER-->   
+     <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>            
+            </div>
+          </div>
+          
+        <div class="footer-copyright">
+          <p>&copy; 2024 ASTRO Hospitals (PVT) ltd.  All rights reserved.</p>
+        </div>
+      </footer>
+          
+          
+          
+      </body>
+  </html>
